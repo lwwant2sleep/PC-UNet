@@ -9,9 +9,7 @@ GlaS (gland, with 165 images)<br>
 ISIC-2018 (dermoscopy, with 2,594 images)<br>
 Kvasir-SEG (endoscopy, with 1,000 images)<br> 
 BUSI (breast ultrasound, with 647 images)<br> 
-CVC-ClinicDB (colonoscopy, with 612 images)<br>  
-
-
+ 
 In GlaS dataset, we split the dataset into a training set of 85 images and a test set of 80 images. <br>
 In ISIC 2018 dataset, we adopt the official split configuration, consisting of a training set with 2,594 images, a validation set with 100 images, and a test set with 1,000 images. <br>
 For other dataset, the images are randomly split into training, validation, and test sets with a ratio of 6:2:2.<br>
