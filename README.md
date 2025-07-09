@@ -1,4 +1,4 @@
-#PC-UNet
+# PC-UNet
 
 In this study, a pure convolutional UNet with channel shuffle average, abbreviated as PC-UNet, has been proposed for medical image segmentation. Notably, the proposed PC-UNet is suitable for extracting context features, which is useful for model improvement. PC-UNet operates as an encoder-decoder network, where both the encoder and decoder are stacked with the proposed Pure Convolution (PC) modules. The PC module, containing a channel shuffle average (CSA) component, is efficient in capturing context feature withoug heavy computation. The proposed CSA component converts features in channel dimension into spatial dimension. Thus, cheap computation can be achieved. The effectiveness of the proposed PC-UNet has been rigorously validated on four widely used datasets, which are ISIC 2018, BUSI, GlaS, and Kvasir-SEG, respectively. Experimental results demonstrate that PC-UNet yields outstanding performance without imposing a significant computational load or increasing float operations (FLOPs). PC-UNet is compared with the other eight mainstream models on four datasets, and both Dice and IoU take the lead.
 
