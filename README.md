@@ -61,7 +61,7 @@ python test_model.py
 Our repo is useful for your research, please consider citing our article. <br>
 This article has been submitted for peer-review in the journal called *Applied Intelligence*.<br>
 ```bibtex
-@ARTICLE{ACHE-Net,
+@ARTICLE{PC-UNet,
   author  = {Wei Liu, Qian Dong, et al},
   journal = {Applied Intelligence}
   title   = {PC-UNet: A Pure Convolutional UNet with Channel Shuffle Average for Medical Image Segmentation},
