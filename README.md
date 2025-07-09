@@ -1,6 +1,6 @@
-# ACHE-Net
+#PC-UNet
 
-In the field of medical image segmentation, improving model performance with moderate model parameter becomes an urgent and challenge task. To address this problem, a novel model called ACHE-Net is proposed in this study, which focuses on the effective convolution and high-frequency enhancement scheme. Two corresponding solutions are Adaptive Decomposed Convolution (ADConv) and Dynamic High-frequency Feature enhancement module (DHF), respectively. Specifically, ADConv achieves a balance between the model performance and computational overhead by establishing mapping between the size of the convolution kernel and the number of feature channels. In the DHF module, a dynamical Discrete Wavelet Transform (DWT) is included for enhancing high-frequency component. In particular, the decomposition level of DWT can be adjusted according to the resolution of the input features. The effectiveness of the proposed ACHE-Net is validated through five datasets, which are Glas, BUSI, Kvasir, CVC-ClinicDB, and ISIC 2018. Experimental results show that the proposed ACHE-Net can greatly outperform other popular models with less model parameter.
+In this study, a pure convolutional UNet with channel shuffle average, abbreviated as PC-UNet, has been proposed for medical image segmentation. Notably, the proposed PC-UNet is suitable for extracting context features, which is useful for model improvement. PC-UNet operates as an encoder-decoder network, where both the encoder and decoder are stacked with the proposed Pure Convolution (PC) modules. The PC module, containing a channel shuffle average (CSA) component, is efficient in capturing context feature withoug heavy computation. The proposed CSA component converts features in channel dimension into spatial dimension. Thus, cheap computation can be achieved. The effectiveness of the proposed PC-UNet has been rigorously validated on four widely used datasets, which are ISIC 2018, BUSI, GlaS, and Kvasir-SEG, respectively. Experimental results demonstrate that PC-UNet yields outstanding performance without imposing a significant computational load or increasing float operations (FLOPs). PC-UNet is compared with the other eight mainstream models on four datasets, and both Dice and IoU take the lead.
 
 
 ## Experiment
@@ -39,7 +39,6 @@ The dataset path may look like:
 
 ### **Installation**
 ```bash
-git clone https://github.com/xwg111/ACHENet.git
 conda create -n env_name python=3.7
 conda activate env_name
 conda install pytorch==1.9.0 torchvision==0.14.1 torchaudio==0.10.0 -c pytorch -c nvidia
@@ -62,16 +61,16 @@ python test_model.py
 ## Citation
 
 Our repo is useful for your research, please consider citing our article. <br>
-This article has been submitted for peer-review in the journal called *The visual computer*.<br>
+This article has been submitted for peer-review in the journal called *Applied Intelligence*.<br>
 ```bibtex
 @ARTICLE{ACHE-Net,
-  author  = {Wenguang Xu, Qian Dong, et al},
-  journal = {The Visual Computer}
-  title   = {A U-shaped Network with Adaptive Convolution and High-Frequency Enhancement for Medical Image Segmentation},
+  author  = {Wei Liu, Qian Dong, et al},
+  journal = {Applied Intelligence}
+  title   = {PC-UNet: A Pure Convolutional UNet with Channel Shuffle Average for Medical Image Segmentation},
   year    = {2025}
 }
 ```
 
 
 ## Contact
-For technical questions, please contact xwg987654@gmail.com .
+For technical questions, please contact lwwant2sleep@qq.com .
